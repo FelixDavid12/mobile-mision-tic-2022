@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PalaceOfVersaillesActivity">
+
+    <ImageView
+        android:id="@+id/main_image_view"
+        android:layout_width="413dp"
+        android:layout_height="219dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/versailles_0"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@drawable/versailles_0" />
+
+    <TextView
+        android:id="@+id/poi_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/poi_name"
+        android:textColor="#2D2C33"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/icon_star"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Palacio de Versalles" />
+
+    <TextView
+        android:id="@+id/poi_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/poi_location"
+        android:textColor="#2D2C01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poi_name"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Place d'Armes, 78000 Versailles, Francia" />
+
+    <TextView
+        android:id="@+id/poi_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/poi_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poi_location"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="El Palacio de Versalles es un edificio que desempeñó las funciones de na residencia real desde 1682 hasta 1789. El palacio está ubicado en el municipio de Versalles, cerca de París, en la región isla de Francia." />
+
+    <TextView
+        android:id="@+id/poi_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="@string/poi_value"
+        app:layout_constraintBaseline_toBaselineOf="@+id/poi_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="4.5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="351dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_image_view"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/poi_img_0"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/img_0_info"
+            android:scaleType="center"
+            android:src="@drawable/versailles_0"
+            tools:ignore="ImageContrastCheck"
+            tools:src="@drawable/versailles_0" />
+
+        <ImageButton
+            android:id="@+id/poi_img_1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/img_1_info"
+            android:src="@drawable/versailles_1"
+            tools:srcCompat="@drawable/versailles_1" />
+
+        <ImageButton
+            android:id="@+id/poi_img_2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/img_2_info"
+            android:src="@drawable/versailles_2"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@drawable/versailles_2" />
+
+        <ImageButton
+            android:id="@+id/poi_img_3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/img_3_info"
+            android:scaleType="center"
+            android:src="@drawable/versailles_3"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@drawable/versailles_3" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/poi_img_map"
+        android:layout_width="0dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/img_map_info"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poi_description"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/map_versailles"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@drawable/map_versailles" />
+
+    <Button
+        android:id="@+id/button_to_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poi_img_map"
+        tools:text="Ubicar" />
+
+    <ImageView
+        android:id="@+id/icon_star"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/poi_value"
+        app:layout_constraintEnd_toStartOf="@+id/poi_value"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/icon_star"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

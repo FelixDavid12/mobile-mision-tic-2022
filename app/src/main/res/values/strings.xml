@@ -8,4 +8,13 @@
         Fue construida durante 2 años para la Exposición Universal de París en 1889.
         Cuenta con 8 ascensores y 4 formas de acceso a través de sus patas.
     </string>
+    <string name="poi_name">Palacio de Versalles</string>
+    <string name="poi_location">Place d\'Armes, 78000 Versailles, Francia</string>
+    <string name="poi_value">4.5</string>
+    <string name="poi_description">El Palacio de Versalles es un edificio que desempeñó las funciones de na residencia real desde 1682 hasta 1789. El palacio está ubicado en el municipio de Versalles, cerca de París, en la región isla de Francia.</string>
+    <string name="img_0_info">Vista general del palacio</string>
+    <string name="img_1_info">Jardín del palacio</string>
+    <string name="img_2_info">Interior del palacio</string>
+    <string name="img_3_info">Frente del palacio</string>
+    <string name="img_map_info">Vista de ubicación del palacio</string>
 </resources>
