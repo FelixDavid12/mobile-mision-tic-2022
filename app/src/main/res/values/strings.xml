@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MobileMisionTIC2022</string>
+    <string name="eiffel_image">Eiffel Tower</string>
+    <string name="eiffel_title">Torre Eiffel</string>
+    <string name="eiffel_description">
+        Ubicada en París, Francia, exactamente en Champ de Mars.
+        Tiene 325 metros de altura y tres pisos únicamente.
+        Fue construida durante 2 años para la Exposición Universal de París en 1889.
+        Cuenta con 8 ascensores y 4 formas de acceso a través de sus patas.
+    </string>
 </resources>
