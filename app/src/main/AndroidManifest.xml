@@ -14,10 +14,13 @@
             android:name=".PontDesArtsActivity"
             android:exported="true" />
         <activity
+            android:name=".EiffelTowerActivity"
+            android:exported="true" />
+        <activity
             android:name=".PalaceOfVersaillesActivity"
             android:exported="true" />
         <activity
-            android:name=".EiffelTowerActivity"
+            android:name=".NotreDameCathedralActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

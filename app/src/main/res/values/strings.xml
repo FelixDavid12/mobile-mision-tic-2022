@@ -21,5 +21,9 @@
     <string name="pont_des_arts_title">Puente de las Artes</string>
     <string name="pont_des_arts_description">Es un puente que atraviesa el río Sena en el centro de París. Conecta el Quai Malaquais y el Quai Conti a la altura del Instituto de Francia, en el distrito VI, con el Quai François-Mitterrand y el Quai du Louvre a la altura del Cour Carrée del Palacio del Louvre</string>
     <string name="como_llegar">¿Cómo llegar?</string>
-    <string name="btn_text">Ubicar</string>
+    <string name="place">Notre Dame Cathedral</string>
+    <string name="description">Construida entre 1163 y 1245 en la Île de la Cité, la Catedral de Notre Dame de París es una de las catedrales góticas más antiguas del mundo. El nombre de la catedral significa Nuestra Señora y está dedicada a la Virgen María.
+        En sus ocho siglos de historia, la Catedral de Notre Dame ha sido reformada en varias ocasiones, siendo la más importante la de mediados del siglo XIX.</string>
+    <string name="Botton">Compartir</string>
+    <string name="cathedral_description">vista frontal</string>
 </resources>
