@@ -11,7 +11,7 @@
     <string name="poi_name">Palacio de Versalles</string>
     <string name="poi_location">Place d\'Armes, 78000 Versailles, Francia</string>
     <string name="poi_value">4.5</string>
-    <string name="poi_description">El Palacio de Versalles es un edificio que desempeñó las funciones de na residencia real desde 1682 hasta 1789. El palacio está ubicado en el municipio de Versalles, cerca de París, en la región isla de Francia.</string>
+    <string name="poi_description">El Palacio de Versalles es un edificio que desempeñó las funciones de una residencia real desde 1682 hasta 1789. El palacio está ubicado en el municipio de Versalles, cerca de París, en la región isla de Francia.</string>
     <string name="img_0_info">Vista general del palacio</string>
     <string name="img_1_info">Jardín del palacio</string>
     <string name="img_2_info">Interior del palacio</string>
@@ -21,4 +21,5 @@
     <string name="pont_des_arts_title">Puente de las Artes</string>
     <string name="pont_des_arts_description">Es un puente que atraviesa el río Sena en el centro de París. Conecta el Quai Malaquais y el Quai Conti a la altura del Instituto de Francia, en el distrito VI, con el Quai François-Mitterrand y el Quai du Louvre a la altura del Cour Carrée del Palacio del Louvre</string>
     <string name="como_llegar">¿Cómo llegar?</string>
+    <string name="btn_text">Ubicar</string>
 </resources>
