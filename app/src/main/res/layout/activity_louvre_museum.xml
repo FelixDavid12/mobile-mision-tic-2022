@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Louvre1" />
+        app:srcCompat="@drawable/louvre1" />
 
     <TextView
         android:id="@+id/DetailView_HeadTitle"
@@ -87,7 +87,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/DetailView_TextBody"
-        app:srcCompat="@drawable/LouvreLocation" />
+        app:srcCompat="@drawable/louvrelocation" />
 
 
     <TextView
@@ -114,7 +114,7 @@
         android:contentDescription="@string/DetailView_TemperatureIconDescription"
         app:layout_constraintStart_toEndOf="@+id/DetailView_LocationImage"
         app:layout_constraintTop_toBottomOf="@+id/DetailView_LocationText"
-        app:srcCompat="@drawable/Temperature" />
+        app:srcCompat="@drawable/temperature" />
 
     <ImageView
         android:id="@+id/DetailView_LocationIcon"
