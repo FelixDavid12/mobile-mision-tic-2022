@@ -1,3 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">MobileMisionTIC2022</string>
+    <string name="eiffel_image">Eiffel Tower</string>
+    <string name="eiffel_title">Torre Eiffel</string>
+    <string name="eiffel_description">
+        Ubicada en París, Francia, exactamente en Champ de Mars.
+        Tiene 325 metros de altura y tres pisos únicamente.
+        Fue construida durante 2 años para la Exposición Universal de París en 1889.
+        Cuenta con 8 ascensores y 4 formas de acceso a través de sus patas.
+    </string>
+    <string name="poi_name">Palacio de Versalles</string>
+    <string name="poi_location">Place d\'Armes, 78000 Versailles, Francia</string>
+    <string name="poi_value">4.5</string>
+    <string name="poi_description">El Palacio de Versalles es un edificio que desempeñó las funciones de una residencia real desde 1682 hasta 1789. El palacio está ubicado en el municipio de Versalles, cerca de París, en la región isla de Francia.</string>
+    <string name="img_0_info">Vista general del palacio</string>
+    <string name="img_1_info">Jardín del palacio</string>
+    <string name="img_2_info">Interior del palacio</string>
+    <string name="img_3_info">Frente del palacio</string>
+    <string name="img_map_info">Vista de ubicación del palacio</string>
+    <string name="pont_des_arts1">Puente de las artes</string>
+    <string name="pont_des_arts_title">Puente de las Artes</string>
+    <string name="pont_des_arts_description">Es un puente que atraviesa el río Sena en el centro de París. Conecta el Quai Malaquais y el Quai Conti a la altura del Instituto de Francia, en el distrito VI, con el Quai François-Mitterrand y el Quai du Louvre a la altura del Cour Carrée del Palacio del Louvre</string>
+    <string name="btn_text">Aceptar</string>
+    <string name="como_llegar">¿Cómo llegar?</string>
+    <string name="place">Notre Dame Cathedral</string>
+    <string name="description">Construida entre 1163 y 1245 en la Île de la Cité, la Catedral de Notre Dame de París es una de las catedrales góticas más antiguas del mundo. El nombre de la catedral significa Nuestra Señora y está dedicada a la Virgen María.
+        En sus ocho siglos de historia, la Catedral de Notre Dame ha sido reformada en varias ocasiones, siendo la más importante la de mediados del siglo XIX.</string>
+    <string name="Botton">Compartir</string>
+    <string name="cathedral_description">vista frontal</string>
+    <string name="DetailView_HeadTitle">Louvre Museum</string>
+    <string name="DetailView_TextBody">s el museo nacional de Francia consagrado tanto a las bellas artes como a la arqueología y las artes decorativas anteriores al Impresionismo. Está ubicado en París, la capital del país, en el antiguo palacio real del Louvre.</string>
+    <string name="DetailView_LocationText">Rue de Rivoli, 75001 Paris, Francia</string>
+    <string name="DetailView_TemperatureText">22ºC</string>
+    <string name="DetailView_HeadImageDescription">DetailView_HeadImageDescription</string>
+    <string name="DetailView_TemperatureIconDescription">DetailView_TemperatureIconDescription</string>
+    <string name="DetailView_LocationImageDescription">DetailView_LocationImageDescription</string>
+    <string name="DetailView_HeadIcon">DetailView_HeadIcon</string>
+    <string name="DetailView_LocationIconDescription">DetailView_LocationIconDescription</string>
 </resources>
