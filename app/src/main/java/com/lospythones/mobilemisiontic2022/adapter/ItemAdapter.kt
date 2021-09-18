@@ -14,7 +14,7 @@ import com.lospythones.mobilemisiontic2022.model.POI
 class ItemAdapter(private val context: Context, private val dataset: List<POI>) :
     RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
-    class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+    class ItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val photoPOI: ImageView = view.findViewById(R.id.img_poi_list)
         val namePOI: TextView = view.findViewById(R.id.name_poi_list)
         val locationPOI: TextView = view.findViewById(R.id.location_poi_list)
