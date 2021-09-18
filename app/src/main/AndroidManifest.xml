@@ -11,13 +11,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileMisionTIC2022">
         <activity
-            android:name=".FelixPOIsActivity"
-            android:exported="true">
+            android:name=".RecyclerActivityJCP"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".FelixPOIsActivity"
+            android:exported="true">
+
         </activity>
         <activity
             android:name=".LouvreMuseum"
@@ -27,19 +33,16 @@
             android:exported="true" />
         <activity
             android:name=".EiffelTowerActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".PalaceOfVersaillesActivity"
             android:exported="true" />
         <activity
             android:name=".RecyclerAnActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".NotreDameCathedralActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
