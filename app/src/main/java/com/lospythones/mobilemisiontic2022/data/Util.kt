@@ -9,7 +9,8 @@ class Util {
 
         try {
             jsonString = context.assets.open(fileName).bufferedReader().use { it.readText() }
-        } catch (ioException: IOException) {
+        }
+        catch (ioException: IOException) {
             ioException.printStackTrace()
         }
 

@@ -11,35 +11,5 @@ class Datasource {
         val listPOIType = object : TypeToken<List<POI>>() {}.type
 
         return gson.fromJson(jsonString, listPOIType)
-
-        // return listOf(Json.decodeFromString(jsonString))
-
-        // return gson.fromJson(jsonString, listPOIType);
-        /*return listOf(
-            POI(
-                R.drawable.versailles_0,
-                R.string.poi_name,
-                R.string.poi_location,
-                R.string.poi_value
-            ),
-            POI(
-                R.drawable.versailles_0,
-                R.string.poi_name,
-                R.string.poi_location,
-                R.string.poi_value
-            ),
-            POI(
-                R.drawable.versailles_0,
-                R.string.poi_name,
-                R.string.poi_location,
-                R.string.poi_value
-            ),
-            POI(
-                R.drawable.versailles_0,
-                R.string.poi_name,
-                R.string.poi_location,
-                R.string.poi_value
-            )
-        )*/
     }
 }
