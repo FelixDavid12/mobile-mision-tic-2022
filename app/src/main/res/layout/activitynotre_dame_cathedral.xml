@@ -28,7 +28,7 @@
         android:contentDescription="@string/cathedral_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ver"
+        app:srcCompat="@drawable/notre_dame1"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="64dp" />
 

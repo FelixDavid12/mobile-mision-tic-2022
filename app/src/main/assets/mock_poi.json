@@ -6,27 +6,27 @@
     "img":  "versailles_0"
   },
   {
-    "name": "Palacio de Versalles",
-    "location": "Place d'Armes, 78000 Versailles, Francia",
-    "rating": "4.5",
-    "img":  "versailles_0"
+    "name": "Torre de Eiffel",
+    "location": "Champ de Mars, Paris, Francia",
+    "rating": "4.7",
+    "img":  "tower_eiffel"
   },
   {
-    "name": "Palacio de Versalles",
-    "location": "Place d'Armes, 78000 Versailles, Francia",
-    "rating": "4.5",
-    "img":  "versailles_0"
+    "name": "Puente de las Artes",
+    "location": "Distrito I, Paris, Francia",
+    "rating": "4.0",
+    "img":  "pont_des_arts1"
   },
   {
-    "name": "Palacio de Versalles",
-    "location": "Place d'Armes, 78000 Versailles, Francia",
-    "rating": "4.5",
-    "img":  "versailles_0"
+    "name": "Museo del Louvre",
+    "location": "Palais Royal, Musée du Louvre, 75001 Paris, Francia",
+    "rating": "4.6",
+    "img":  "louvre11"
   },
   {
-    "name": "Palacio de Versalles",
-    "location": "Place d'Armes, 78000 Versailles, Francia",
-    "rating": "4.5",
-    "img":  "versailles_0"
+    "name": "Catedral de Notre Dame",
+    "location": "Isla de la Cité, IV Distrito de París 11100, Francia",
+    "rating": "4.4",
+    "img":  "NotreDame1"
   }
 ]
