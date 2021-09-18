@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileMisionTIC2022">
         <activity
+            android:name=".LouvreMuseum"
+            android:exported="true" />
+        <activity
             android:name=".PontDesArtsActivity"
             android:exported="true" />
         <activity
@@ -20,7 +23,7 @@
             android:name=".PalaceOfVersaillesActivity"
             android:exported="true" />
         <activity
-            android:name=".LouvreMuseum"
+            android:name=".RecyclerAnActivity"
             android:exported="true">
 
             <intent-filter>
