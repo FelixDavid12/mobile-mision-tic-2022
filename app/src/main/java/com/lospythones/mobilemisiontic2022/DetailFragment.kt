@@ -32,7 +32,6 @@ class DetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentDetailBinding.inflate(inflater, container, false)
-
         return binding.root
     }
 
@@ -48,11 +47,12 @@ class DetailFragment : Fragment() {
         binding.imageButton4.setImageDrawable(getImage(2))
         binding.imageButton5.setImageDrawable(getImage(3))
         binding.imageButton6.setImageDrawable(getImage((4)))
+        (requireActivity() as MainActivity).title = binding.poiName.text
     }
 
     override fun onDestroy() {
         super.onDestroy()
-
+        (requireActivity() as MainActivity).title = "Paris"
         _binding = null
     }
 
