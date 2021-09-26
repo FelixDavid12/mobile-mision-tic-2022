@@ -7,7 +7,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.card.MaterialCardView
+import com.lospythones.mobilemisiontic2022.ListFragmentDirections
 import com.lospythones.mobilemisiontic2022.R
 import com.lospythones.mobilemisiontic2022.model.POI
 
@@ -19,6 +22,7 @@ class ItemAdapter(private val context: Context, private val dataset: List<POI>) 
         val namePOI: TextView = view.findViewById(R.id.name_poi_list)
         val locationPOI: TextView = view.findViewById(R.id.location_poi_list)
         val ratingPOI: TextView = view.findViewById(R.id.rating_poi_list)
+        val card : MaterialCardView = view.findViewById(R.id.materialcard)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
@@ -39,6 +43,10 @@ class ItemAdapter(private val context: Context, private val dataset: List<POI>) 
         holder.namePOI.text = item.name
         holder.locationPOI.text = item.location
         holder.ratingPOI.text = item.rating
+        holder.card.setOnClickListener {
+            val action = ListFragmentDirections.actionListFragmentToDetailFragment()
+            holder.itemView.findNavController().navigate(action)
+        }
     }
 
     override fun getItemCount() = dataset.size

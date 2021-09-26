@@ -11,10 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileMisionTIC2022">
         <activity
-            android:name=".MainActivity"
+            android:name=".RecyclerActivityJCP"
             android:exported="true" />
         <activity
-            android:name=".RecyclerActivityJCP"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
