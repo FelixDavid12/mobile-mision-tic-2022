@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.lospythones.mobilemisiontic2022.ListFragment"
-        android:label="fragment_list"
-        tools:layout="@layout/fragment_list" >
+        android:label="París"
+        tools:layout="@layout/fragment_list">
         <action
             android:id="@+id/action_listFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
@@ -20,8 +20,12 @@
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.lospythones.mobilemisiontic2022.DetailFragment"
-        android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        android:label="@string/poi_name"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="poi"
+            app:argType="com.lospythones.mobilemisiontic2022.model.POI" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.lospythones.mobilemisiontic2022.SettingsFragment"

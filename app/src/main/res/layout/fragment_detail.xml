@@ -1,189 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailFragment">
 
-    <ImageView
-        android:id="@+id/main_image_view"
-        android:layout_width="413dp"
-        android:layout_height="219dp"
-        android:importantForAccessibility="no"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/versailles_0"
-        tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@drawable/versailles_0" />
-
-    <TextView
-        android:id="@+id/poi_name"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="10dp"
-        android:text="@string/poi_name"
-        android:textColor="#2D2C33"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/icon_star"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_image_view"
-        app:layout_constraintVertical_bias="0.24"
-        tools:text="@string/poi_name" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/poi_location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="30dp"
-        android:text="@string/poi_location"
-        android:textColor="#2D2C01"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/poi_name"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="@string/poi_location" />
+        <ImageView
+            android:id="@+id/main_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="219dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/versailles_0"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@drawable/versailles_0" />
 
-    <TextView
-        android:id="@+id/poi_description"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:text="@string/poi_description"
-        android:textColor="#2D2C33"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/poi_location"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="@string/poi_description" />
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_image_view">
 
-    <TextView
-        android:id="@+id/poi_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:text="@string/poi_value"
-        app:layout_constraintBaseline_toBaselineOf="@+id/poi_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:text="@string/poi_value" />
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/img_0_info"
+                app:srcCompat="@drawable/versailles_0"
+                tools:ignore="ImageContrastCheck" />
 
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/img_1_info"
+                app:srcCompat="@drawable/versailles_1" />
 
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/img_2_info"
+                app:srcCompat="@drawable/versailles_2"
+                tools:ignore="ImageContrastCheck" />
 
-    <ImageView
-        android:id="@+id/poi_img_map"
-        android:layout_width="0dp"
-        android:layout_height="122dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:contentDescription="@string/img_map_info"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/poi_description"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/map_versailles"
-        tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@drawable/map_versailles" />
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/img_3_info"
+                app:srcCompat="@drawable/versailles_3"
+                tools:ignore="ImageContrastCheck" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/button_to_map"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:text="@string/btn_text"
-        android:textAllCaps="false"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/poi_img_map"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="@string/btn_text" />
+        <TextView
+            android:id="@+id/poi_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="@string/poi_name"
+            android:textColor="#2D2C33"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:text="@string/poi_name" />
 
-    <ImageView
-        android:id="@+id/icon_star"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginEnd="5dp"
-        android:importantForAccessibility="no"
-        app:layout_constraintBottom_toBottomOf="@+id/poi_value"
-        app:layout_constraintEnd_toStartOf="@+id/poi_value"
-        app:layout_constraintTop_toBottomOf="@+id/main_image_view"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/icon_star"
-        tools:ignore="ImageContrastCheck" />
+        <ImageView
+            android:id="@+id/icon_star"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="5dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/poi_name"
+            app:layout_constraintEnd_toStartOf="@+id/poi_value"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/poi_name"
+            app:layout_constraintTop_toTopOf="@+id/poi_name"
+            app:layout_constraintVertical_bias="0.833"
+            app:srcCompat="@drawable/icon_star"
+            tools:ignore="ImageContrastCheck" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="85dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:contentDescription="@string/img_0_info"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_image_view"
-        app:srcCompat="@drawable/versailles_0"
-        tools:ignore="ImageContrastCheck" />
+        <TextView
+            android:id="@+id/poi_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:text="@string/poi_value"
+            app:layout_constraintBaseline_toBaselineOf="@+id/poi_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="@string/poi_value" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="85dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="30dp"
-        android:contentDescription="@string/img_1_info"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/main_image_view"
-        app:srcCompat="@drawable/versailles_1" />
+        <TextView
+            android:id="@+id/poi_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/poi_location"
+            android:textColor="#2D2C01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poi_name"
+            tools:text="@string/poi_location" />
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="85dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="30dp"
-        android:contentDescription="@string/img_2_info"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/main_image_view"
-        app:srcCompat="@drawable/versailles_2"
-        tools:ignore="ImageContrastCheck" />
+        <TextView
+            android:id="@+id/poi_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/poi_description"
+            android:textColor="#2D2C33"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poi_location"
+            tools:text="@string/poi_description" />
 
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="85dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:contentDescription="@string/img_3_info"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/main_image_view"
-        app:srcCompat="@drawable/versailles_3"
-        tools:ignore="ImageContrastCheck" />
+        <ImageView
+            android:id="@+id/poi_img_map"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/img_map_info"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poi_description"
+            app:srcCompat="@drawable/map_versailles"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@drawable/map_versailles" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-
+        <Button
+            android:id="@+id/button_to_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/btn_text"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poi_img_map"
+            tools:text="@string/btn_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -44,7 +44,7 @@ class ItemAdapter(private val context: Context, private val dataset: List<POI>) 
         holder.locationPOI.text = item.location
         holder.ratingPOI.text = item.rating
         holder.card.setOnClickListener {
-            val action = ListFragmentDirections.actionListFragmentToDetailFragment()
+            val action = ListFragmentDirections.actionListFragmentToDetailFragment(poi = item)
             holder.itemView.findNavController().navigate(action)
         }
     }
