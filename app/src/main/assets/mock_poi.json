@@ -8,7 +8,7 @@
     "gallery": ["map_versailles", "versailles_0", "versailles_1", "versailles_2", "versailles_3"]
   },
   {
-    "name": "Torre de Eiffel",
+    "name": "Torre Eiffel",
     "location": "Champ de Mars, Paris, Francia",
     "rating": "4.7",
     "img":  "tower_eiffel",
@@ -29,7 +29,7 @@
     "rating": "4.6",
     "img":  "louvre11",
     "detail": "Es el museo nacional de Francia consagrado tanto a las bellas artes como a la arqueología y las artes decorativas anteriores al Impresionismo. Está ubicado en París, la capital del país, en el antiguo palacio real del Louvre",
-    "gallery": ["louvre11", "louvre11", "louvre21", "louvre31", "louvre41"]
+    "gallery": ["louvre11", "louvre11", "louvre11", "louvre11", "louvre11"]
   },
   {
     "name": "Catedral de Notre Dame",

@@ -52,7 +52,7 @@ class DetailFragment : Fragment() {
 
     override fun onDestroy() {
         super.onDestroy()
-        (requireActivity() as MainActivity).title = "Paris"
+
         _binding = null
     }
 
