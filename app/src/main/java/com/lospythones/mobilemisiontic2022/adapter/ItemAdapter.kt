@@ -12,10 +12,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 import com.lospythones.mobilemisiontic2022.ListFragmentDirections
 import com.lospythones.mobilemisiontic2022.R
-import com.lospythones.mobilemisiontic2022.model.POI
+import com.lospythones.mobilemisiontic2022.model.POIModel
 
-class ItemAdapter(private val context: Context, private val dataset: List<POI>) :
+class ItemAdapter(
+    private val context: Context
+) :
     RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
+
+    private var poisList = mutableListOf<POIModel>()
 
     class ItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val photoPOI: ImageView = view.findViewById(R.id.img_poi_list)
@@ -33,7 +37,7 @@ class ItemAdapter(private val context: Context, private val dataset: List<POI>) 
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        val item = dataset[position]
+        val item = poisList[position]
 
         val uri = "@drawable/${item.img}"
         val imageResource = context.resources.getIdentifier(uri, null, context.packageName)
@@ -47,7 +51,16 @@ class ItemAdapter(private val context: Context, private val dataset: List<POI>) 
             val action = ListFragmentDirections.actionListFragmentToDetailFragment(poi = item)
             holder.itemView.findNavController().navigate(action)
         }
+
     }
 
-    override fun getItemCount() = dataset.size
+    override fun getItemCount(): Int {
+        return poisList.size
+    }
+
+    fun updatePoisList(pois: List<POIModel>?) {
+        this.poisList.clear()
+        pois?.let { this.poisList.addAll(it) }
+        notifyDataSetChanged()
+    }
 }

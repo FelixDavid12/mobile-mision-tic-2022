@@ -8,14 +8,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.content.res.AppCompatResources
 import com.lospythones.mobilemisiontic2022.databinding.FragmentDetailBinding
-import com.lospythones.mobilemisiontic2022.model.POI
+import com.lospythones.mobilemisiontic2022.model.POIModel
 
 class DetailFragment : Fragment() {
     companion object {
         const val POI_SELECTED = "poi"
     }
 
-    private var poiInfo: POI? = null
+    private var poiInfo: POIModel? = null
 
     private var _binding: FragmentDetailBinding? = null
     private val binding get() = _binding!!
@@ -23,7 +23,7 @@ class DetailFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            poiInfo = it.getSerializable(POI_SELECTED) as POI?
+            poiInfo = it.getSerializable(POI_SELECTED) as POIModel?
         }
     }
 

@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_detail">
         <argument
             android:name="poi"
-            app:argType="com.lospythones.mobilemisiontic2022.model.POI" />
+            app:argType="com.lospythones.mobilemisiontic2022.model.POIModel" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"

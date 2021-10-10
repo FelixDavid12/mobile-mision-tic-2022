@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lospythones.mobilemisiontic2022">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -11,9 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileMisionTIC2022">
         <activity
-            android:name=".RecyclerActivityJCP"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -22,27 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".FelixPOIsActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".LouvreMuseum"
-            android:exported="true" />
-        <activity
-            android:name=".PontDesArtsActivity"
-            android:exported="true" />
-        <activity
-            android:name=".EiffelTowerActivity"
-            android:exported="true" />
-        <activity
-            android:name=".PalaceOfVersaillesActivity"
-            android:exported="true" />
-        <activity
-            android:name=".RecyclerAnActivity"
-            android:exported="true" />
-        <activity
-            android:name=".NotreDameCathedralActivity"
-            android:exported="true" />
     </application>
 
 </manifest>
