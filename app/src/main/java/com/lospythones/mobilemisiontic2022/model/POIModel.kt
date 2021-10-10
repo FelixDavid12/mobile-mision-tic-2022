@@ -1,5 +1,6 @@
 package com.lospythones.mobilemisiontic2022.model
 
+import com.google.android.gms.maps.model.LatLng
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
@@ -21,5 +22,12 @@ data class POIModel(
     val detail: String,
 
     @SerializedName("gallery")
-    val gallery: List<String>
+    val gallery: List<String>,
+
+    @SerializedName("long")
+    val long: Double,
+
+    @SerializedName("lat")
+    val lat: Double
+
 ) : Serializable

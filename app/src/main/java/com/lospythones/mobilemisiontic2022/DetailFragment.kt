@@ -7,6 +7,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.content.res.AppCompatResources
+import androidx.fragment.app.FragmentManager.findFragment
+import androidx.fragment.app.findFragment
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.MapFragment
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.*
 import com.lospythones.mobilemisiontic2022.databinding.FragmentDetailBinding
 import com.lospythones.mobilemisiontic2022.model.POIModel
 
@@ -41,13 +48,15 @@ class DetailFragment : Fragment() {
         binding.poiDescription.text = poiInfo?.detail
         binding.poiValue.text = poiInfo?.rating
 
-        binding.poiImgMap.setImageDrawable((getImage(0)))
         binding.mainImageView.setImageDrawable(getImage(1))
         binding.imageButton3.setImageDrawable(getImage(1))
         binding.imageButton4.setImageDrawable(getImage(2))
         binding.imageButton5.setImageDrawable(getImage(3))
         binding.imageButton6.setImageDrawable(getImage((4)))
         (requireActivity() as MainActivity).title = binding.poiName.text
+        val map = childFragmentManager.findFragmentById(R.id.map_fragment) as? SupportMapFragment
+        map?.getMapAsync {googleMap -> addMarker(googleMap)}
+
     }
 
     override fun onDestroy() {
@@ -64,4 +73,20 @@ class DetailFragment : Fragment() {
 
         return AppCompatResources.getDrawable(context, imageResource)
     }
+
+    /**
+     * Adds marker representations of the places list on the provided GoogleMap object
+     */
+    private fun addMarker(googleMap: GoogleMap) {
+        val position = LatLng(poiInfo?.lat!!, poiInfo?.long!!)
+        val marker = googleMap.addMarker(MarkerOptions()
+            .title(poiInfo?.name)
+            .position(position).flat(true)
+       )
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(position))
+        googleMap.moveCamera(CameraUpdateFactory.zoomTo(14.0F))
+    }
+
+
+
 }
