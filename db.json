@@ -7,10 +7,8 @@
       "img":  "versailles_0",
       "detail": "El Palacio de Versalles es un edificio que desempeñó las funciones de una residencia real desde 1682 hasta 1789. El palacio está ubicado en el municipio de Versalles, cerca de París, en la región isla de Francia.",
       "gallery": ["map_versailles", "versailles_0", "versailles_1", "versailles_2", "versailles_3"],
-      "coordinates": {
-        "lat": 48.8048649,
-        "long": 2.1181667
-      }
+      "lat": 48.8048649,
+      "long": 2.1181667
     },
     {
       "name": "Torre Eiffel",
@@ -19,10 +17,8 @@
       "img":  "tower_eiffel",
       "detail": "Tiene 325 metros de altura y tres pisos únicamente.\n Fue construida durante 2 años para la Exposición Universal de París en 1889.\n Cuenta con 8 ascensores y 4 formas de acceso a través de sus patas.",
       "gallery": ["tower_eiffel", "tower_eiffel", "tower_eiffel", "tower_eiffel", "tower_eiffel"],
-      "coordinates": {
-        "lat": 48.85391,
-        "long": 2.2913515
-      }
+      "lat": 48.85391,
+      "long": 2.2913515
     },
     {
       "name": "Puente de las Artes",
@@ -31,10 +27,8 @@
       "img":  "pont_des_arts1",
       "detail": "Es un puente que atraviesa el río Sena en el centro de París. Conecta el Quai Malaquais y el Quai Conti a la altura del Instituto de Francia, en el distrito VI, con el Quai François-Mitterrand y el Quai du Louvre a la altura del Cour Carrée del Palacio del Louvre",
       "gallery": ["puente_mapa", "pont_des_arts1", "pont_des_arts2", "pont_des_arts3", "pont_des_arts4"],
-      "coordinates": {
-        "lat": 48.8583424,
-        "long": 2.3353197
-      }
+      "lat": 48.8583424,
+      "long": 2.3353197
     },
     {
       "name": "Museo del Louvre",
@@ -43,10 +37,8 @@
       "img":  "louvre11",
       "detail": "Es el museo nacional de Francia consagrado tanto a las bellas artes como a la arqueología y las artes decorativas anteriores al Impresionismo. Está ubicado en París, la capital del país, en el antiguo palacio real del Louvre",
       "gallery": ["louvre11", "louvre11", "louvre11", "louvre11", "louvre11"],
-      "coordinates": {
-        "lat": 48.8606111,
-        "long": 2.3354553
-      }
+      "lat": 48.8606111,
+      "long": 2.3354553
     },
     {
       "name": "Catedral de Notre Dame",
@@ -55,10 +47,8 @@
       "img": "notre_dame1",
       "detail": "Construida entre 1163 y 1245 en la Île de la Cité, la Catedral de Notre Dame de París es una de las catedrales góticas más antiguas del mundo. El nombre de la catedral significa Nuestra Señora y está dedicada a la Virgen María.\n        En sus ocho siglos de historia, la Catedral de Notre Dame ha sido reformada en varias ocasiones, siendo la más importante la de mediados del siglo XIX.",
       "gallery": ["notre_dame1", "notre_dame1", "notre_dame1", "notre_dame1", "notre_dame1"],
-      "coordinates": {
-        "lat": 48.8529682,
-        "long": 2.3499021
-      }
+      "lat": 48.8529682,
+      "long": 2.3499021
     }
   ]
 }
