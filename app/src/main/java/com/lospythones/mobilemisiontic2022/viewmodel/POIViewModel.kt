@@ -25,7 +25,7 @@ class POIViewModel : ViewModel() {
         }
     }
 
-    private suspend fun requestPois(): List<POIModel> {
+    suspend fun requestPois(): List<POIModel> {
         return withContext(Dispatchers.IO) {
             apiService.requestPois()
         }
